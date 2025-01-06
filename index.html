@@ -23,10 +23,7 @@
         <div class="logo" id="main-logo">
             <img src="images/Kraftars-logo.avif" alt="Logo">
         </div>
-        <button class="toggle-button" id="toggle-button">
-            &#9776; <!-- Hamburger icon -->
-        </button>
-        <nav id="navbar">
+        <nav id="navbar" class="nav_menu">
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#abouts">About</a></li>
@@ -45,9 +42,11 @@
                 <li><a href="#projectss">Projects</a></li>
                 <li><a href="#blog">Blog</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="tel:+9147002014" class="call-action">Call Us</a></li>
             </ul>
         </nav>
-        <a href="tel:+9147002014" class="call-action">Call Us</a>
+        
+        <div class="toggle-btn" onclick="toggleMenu()">&#9776;</div> 
     </div>
 
 
@@ -61,7 +60,7 @@
                 <h4 class="home__title_p">Ensuring the best return on <br>investment for your bespoke SEO Camping
                     requirment
                 </h4>
-                <button>Explore Now</button>
+                <button><a href="abouts"></a>Explore Now</button>
             </div>
             <div class="home2">
                 <div class="wrapper_p1">
@@ -89,10 +88,11 @@
                         <span class="text">Branches</span>
                     </div>
                 </div>
-
-            </div>
-
+            </div>]
         </div>
+
+
+        
         <div class="page2" id="abouts">
             <div class="about-container">
                 <!-- Left Section: Image -->
@@ -304,77 +304,79 @@
             </section>
         </div>
         <div class="page8" id="projectss">
-            <div class="project_title">
-                <h1> Explore Our Projects</h1>
-                <div class="project_elem">
-                    <div class="project_box">
-                        <div class="project_num">
-                            <h1>1</h1>
-                        </div>
-                        <div class="project_img">
-                            <img src="images/digital.jpg" alt="" srcset="">
-                        </div>
-                        <div class="project_content">
-                            <h3>Digital Marketing Service</h3>
-                            <p>With our Digital Marketing Services, we provide expert guidance to navigate the
-                                competitive landscape. Our services include comprehensive market research, strategic
-                                planning, campaign development, and performance analysis, ensuring your marketing
-                                efforts are effective and aligned with your business goals.</p>
-                            <button>See More</button>
-                        </div>
+            <div class="project_container">
+                <h1>Project</h1>
+                <div class="project_items">
+                    <div class="project_item_img">
+                        <img src="images/digital.jpg" alt="">
                     </div>
-                    <div class="project_box">
-                        <div class="project_num">
-                            <h1>2</h1>
-                        </div>
-                        <div class="project_img">
-                            <img src="images/freepik__enhance__2798.png" alt="" srcset="">
-                        </div>
-                        <div class="project_content">
-                            <h3>Graphics Design</h3>
-                            <p>Our Graphic Design services transform ideas into stunning visuals that captivate and
-                                communicate. From branding and logo design to marketing materials and infographics, we
-                                deliver high-quality, bespoke designs that elevate your brand’s identity and leave a
-                                lasting impression.</p>
-                            <button>See More</button>
-                        </div>
+                    <div class="project_item_content">
+                        <h3>Digital Marketing Service</h3>
+                        <p>With our Digital Marketing Services, we provide expert guidance to navigate the
+                            competitive landscape. Our services include comprehensive market research, strategic
+                            planning, campaign development, and performance analysis, ensuring your marketing
+                            efforts are effective and aligned with your business goals.</p>
+                        <button>See More</button>
                     </div>
-                    <div class="project_box">
-                        <div class="project_num">
-                            <h1>3</h1>
-                        </div>
-                        <div class="project_img">
-                            <img src="images/web.jpg" alt="" srcset="">
-                        </div>
-                        <div class="project_content">
-                            <h3>Website Design</h3>
-                            <p>Our Web Design services focus on crafting user-friendly, aesthetically pleasing websites.
-                                We specialize in UI/UX design, website redesigns, landing pages, and wireframing,
-                                creating visually compelling sites that provide a seamless user experience and achieve
-                                your business objectives</p>
-                            <button>See More</button>
-                        </div>
+                </div>
+                <div class="project_items reverse ">
+                    <div class="project_item_img">
+                        <img src="images/freepik__enhance__2798.png" alt="">
                     </div>
-                    <div class="project_box">
-                        <div class="project_num">
-                            <h1>4</h1>
-                        </div>
-                        <div class="project_img">
-                            <img src="images/seo.jpg" alt="" srcset="">
-
-                        </div>
-                        <div class="project_content">
-                            <h3>Search Engine Optimisation</h3>
+                    <div class="project_item_content">
+                        <h3>Graphics Design</h3>
+                        <p>Our Graphic Design services transform ideas into stunning visuals that captivate and
+                            communicate. From branding and logo design to marketing materials and infographics, we
+                            deliver high-quality, bespoke designs that elevate your brand’s identity and leave a
+                            lasting impression.</p>
+                        <button>See More</button>
+                    </div>
+                </div>
+                <div class="project_items">
+                    <div class="project_item_img">
+                        <img src="images/web.jpg" alt="">
+                    </div>
+                    <div class="project_item_content">
+                        <h3>Website Design</h3>
+                        <p>Our Web Design services focus on crafting user-friendly, aesthetically pleasing websites.
+                            We specialize in UI/UX design, website redesigns, landing pages, and wireframing,
+                            creating visually compelling sites that provide a seamless user experience and achieve
+                            your business objectives</p>
+                        <button>See More</button>
+                    </div>
+                </div>
+                <div class="project_items reverse ">
+                    <div class="project_item_img">
+                        <img src="images/seo.jpg" alt="">
+                    </div>
+                    <div class="project_item_content">
+                        <h3>Search Engine Optimisation</h3>
                             <p>If you are looking for best SEO Company or SEO Expert in Kolkata then you are on right
                                 place. WebHopers is Digital Marketing & Web Development company in India that provides
                                 the best SEO Services in Kolkata. We are the team of SEO Experts those are Google
                                 certified & having 6+ experiences.</p>
                             <button>See More</button>
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- <section class="pageformob1">
+            <div class="projbox">
+                <div class="projimg">
+                    <img src="" alt="">
+                </div>
+                <div class="projdetail">
+                    <div class="mobprojp">
+                        <h3></h3>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+            <div class="projbox"></div>
+            <div class="projbox"></div>
+        </section> -->
+
 
         <div class="page9">
             <section class="section__container">
