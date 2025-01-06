@@ -268,12 +268,46 @@ Shery.mouseFollower({
  
 
 // Toggle button functionality
-const toggleButton = document.getElementById('toggle-button');
-const navbar = document.getElementById('navbar');
+// const toggleButton = document.getElementById('toggle-button');
+// const navbar = document.getElementById('navbar');
 
-toggleButton.addEventListener('click', () => {
-    navbar.classList.toggle('active');
-});
+// toggleButton.addEventListener('click', () => {
+//     navbar.classList.toggle('active');
+// });
+
+// function toggleMenu() {
+//     console.log("Clicked");
+//     const menu = document.querySelector('.nav_menu');
+//     menu.classList.toggle('active');
+//     document.querySelector(".home1").style.marginTop = "100px";
+// }
+function toggleMenu() {
+    console.log("Menu toggled");
+    const menu = document.querySelector(".nav_menu");
+    menu.classList.toggle("active");
+  
+    if (window.innerWidth <= 768) {
+      const home = document.querySelector(".home1");
+      if (menu.classList.contains("active")) {
+        home.style.marginTop = "100px";
+      } else {
+        home.style.marginTop = "0";
+      }
+    }
+  }
+  document.addEventListener("click", function (event) {
+    const menu = document.querySelector(".nav_menu");
+    const toggleBtn = document.querySelector(".toggle-btn");
+    if (!menu.contains(event.target) && !toggleBtn.contains(event.target)) {
+      if (menu.classList.contains("active")) {
+        menu.classList.remove("active");
+        const home = document.querySelector(".home1");
+        home.style.marginTop = "0"; 
+      }
+    }
+  });
+  
+
 
 document.querySelector('.explore-btn').addEventListener('click', function () {
     alert('Explore more about us!');
