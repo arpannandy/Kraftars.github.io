@@ -2128,3 +2128,52 @@ nav.active {
 .blogbutton h3{
   color: #4f6e9d;
 }
+@media screen and (max-width: 768px){
+  .blog_title h1 {
+    font-size: 1.75rem;
+    margin-top: -60px;
+    margin-bottom: 20px;
+}
+.blog_content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 100px;
+  flex-wrap: wrap;
+}
+.blog_cards{
+ height: 220px;
+ width: 200px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ row-gap: 10px;
+}
+.blogbutton h3 {
+  color: #4f6e9d;
+  font-size: 0.85rem;
+}
+.blog_img{
+  width: 100%;
+  height: 80%;
+  
+}
+
+.blogbutton{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 10px;
+}
+.blogbutton button{
+  font-size: 0.65rem;
+  width: 100px;
+  height: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+}
